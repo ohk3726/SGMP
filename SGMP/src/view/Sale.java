@@ -54,7 +54,6 @@ public class Sale extends JFrame {
 	private JTextField cusno;
 	private JTextField textField;
 	private Dbtest dbtest;
-	private Test2 test2;
 	
 	/**
 	 * Launch the application.
@@ -287,22 +286,6 @@ public class Sale extends JFrame {
 				}
 			}
 		};
-		btnSelect.addActionListener(listener);
-		//테이블 마우스 클릭 이벤트
-		class MyMouseListener extends MouseAdapter{
-			@Override
-			public void mouseClicked(MouseEvent e){
-				if(e.getClickCount()==2){
-					int row = table_1.getSelectedRow();
-					if(row != -1){
-						test2.testShow(table_1.getValueAt(row, 1).toString());
-						//new Test2(table_1.getValueAt(row, 1).toString());
-					}
-				}
-			}
-		}
-		//마우스 더블클릭 이벤트 리스너
-		table_1.addMouseListener(new MyMouseListener());
 		
 	}
 	
