@@ -3,15 +3,36 @@ package model;
 public class Product_model {
 	private String prod_id;
 	private String prod_name;
-	private int prod_cnt;
-	private int prod_price;
+	private String prod_cnt;
+	private String prod_price;
 	private String prod_pic;
 	private String prod_main_category;
 	private String prod_sub_category;
 	private String prod_Ssub_category;
 	private String prod_ex;
 	private String prod_date;
+	private String prod_wearing_price;
+	private String prod_cnt_min;
+	private String prod_flag;
 	
+	public String getProd_cnt_min() {
+		return prod_cnt_min;
+	}
+	public void setProd_cnt_min(String prod_cnt_min) {
+		this.prod_cnt_min = prod_cnt_min;
+	}
+	public String getProd_wearing_price() {
+		return prod_wearing_price;
+	}
+	public void setProd_wearing_price(String prod_wearing_price) {
+		this.prod_wearing_price = prod_wearing_price;
+	}
+	public String getProd_flag() {
+		return prod_flag;
+	}
+	public void setProd_flag(String prod_flag) {
+		this.prod_flag = prod_flag;
+	}
 	public String getProd_id() {
 		return prod_id;
 	}
@@ -24,16 +45,16 @@ public class Product_model {
 	public void setProd_name(String prod_name) {
 		this.prod_name = prod_name;
 	}
-	public int getProd_cnt() {
+	public String getProd_cnt() {
 		return prod_cnt;
 	}
-	public void setProd_cnt(int prod_cnt) {
+	public void setProd_cnt(String prod_cnt) {
 		this.prod_cnt = prod_cnt;
 	}
-	public int getProd_price() {
+	public String getProd_price() {
 		return prod_price;
 	}
-	public void setProd_price(int prod_price) {
+	public void setProd_price(String prod_price) {
 		this.prod_price = prod_price;
 	}
 	public String getProd_pic() {
